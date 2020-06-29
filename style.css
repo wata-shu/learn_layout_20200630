@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    margin: 0;
+    font-size: 2rem;
+
+    /* vhは100段階に分けたうちのどこまでなのかの指定（100%とイコール） */
+    min-height: 100vh;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+    width: 25%;
+    min-width: 250px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    border: black 1px black;
+    /* border-style: solid; */
+
+    background-color: lightgreen;
+}
+main{
+    width: 700px;
+    margin: 0 auto;
+    background-color: lightblue;
+    /* flex: 1; */
+}
+aside div{
+    background-color: lightgrey;
+    height: 300px;
+    /* 上に空けれる幅があれば空けてくださいとの指定 */
+    margin-top: auto;
+}
+/* .alllayout{
+    再度メニューとmainタグを横並び
+    display: flex;
+    height: 500px;
+
+    border: black 0.1px solid;
+
+}
+.sidemenu{
+    itemメニューとフッターを縦並び（colum設定）
+    display: flex;
+    flex-direction: column;
+    これはflex-wrap指定時の行間を埋める設定だった
+    align-content: space-between;
+    justify-content: space-around;
+    縦と横が入れ替わったためjustify-contentで縦型に配置
+    justify-content: space-between;
+}
+
+.upperside{
+    background-color: yellowgreen;
+    box-sizing: border-box;
+
+    flex: 8;
+}
+.upperside div{
+    height: max-content;
+}
+footer{
+    background-color: blueviolet;
+
+    flex: 2;
+}
+.mainarea{
+    background-color: aqua;
+    flex: 1;
+} */
